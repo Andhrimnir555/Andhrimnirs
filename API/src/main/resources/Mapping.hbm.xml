@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping>
+    <class name="com.example.api.entity.CharacterEntity" table="charactersrm">
+        <id name="id" type="integer" column="id"> 
+            <generator class="assigned"/>
+        </id>
+        <property name="name" column="charname" type="string" length="25"/>
+        <property name="status" column="status" type="string" length="25"/>
+        <property name="species" column="species" type="string" length="25"/>
+        <property name="type" column="chartype" type="string" length="25"/>
+        <property name="gender" column="gender" type="string" length="25"/>
+        <property name="origin" column="origin" type="string" length="25"/>
+        <property name="location" column="location" type="string" length="25"/>
+        <property name="image" column="image" type="string" length="25"/>
+        <property name="episode" column="episode" type="string" length="25"/>
+        <property name="url" column="url" type="string" length="25"/>
+        <property name="created" column="created" type="date"/>
+
+    </class>
+</hibernate-mapping>
